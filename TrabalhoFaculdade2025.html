@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Trabalho para Faculdade</title>
+    <title>Página com Botão</title>
+
+</head>
+<body>
+    <h1> Denis Antonio de Conto</h1>
+    <p> Olá Meu nome é Denis Antonio de Conto, tenho 23 anos, moro em Roca Sales - RS, sou apaixonado por TI e desejo seguir carreira como Engenheiro de Software!
+    <button id="mensagemBtn">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+
+        <h2> Meus Hobbies</h2>
+    <ul>
+        <li> Assistir e jogar Futebol
+        <li> Jogar jogos no computador
+        <li> Aprender sobre Programação
+
+        </li>
+        </ul>
+     
+        <h3> Imagem de um Hobbie
+            <img src=" https://pbs.twimg.com/media/FmtkU5uXkAYBqbv?format=jpg&name=large"
+            alt="Imagem de um Hobbie" width="400" height="250px">
+
+        <h2> Paises que eu gostaria visitar</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>Estados Unidos</td>
+                <th><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos Estados Unidos" width="50" height="30"></th>
+
+            </tr>
+            <tr>
+                <td>Holanda</td>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg" alt="Bandeira da Holanda" width="50" height="30"></th>
+            </tr>
+            <tr>
+                <td>Noruega</td>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg" alt="Bandeira da Noruega" width="50" height="30"></th>
+            </tr>
+                
+        </table>
+             <h2> Site de interesse</h2>
+             <p> Link: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Canal Curso em Vídeo</a></p>
+</body>
+</html> 
+ 
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    background-color:coral;
+    margin: 40px;
+    color:rgb(17, 14, 3)
+}
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2,h3 {
+    color: rgb(255, 255, 255);
+}
+p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+    
+ul {
+    list-style-type: square;
+    font-size: 16px;
+    line-height: 2;
+    padding: 20px;
+}
+img {
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+    background-color: rgb(139, 46, 46);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+td {
+    border: 1px solid #fdfdfd;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: chartreuse;
+    text-decoration: underline;
+}</style>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("mensagemBtn").addEventListener("click", function() {
+    document.getElementById("mensagem").textContent = "A programação é a melhor alquimia da mente humana."
+
+
+    });
+    </script>
